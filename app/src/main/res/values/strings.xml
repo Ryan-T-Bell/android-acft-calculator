@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ACFT Calculator</string>
+
+    <!-- Navigation Drawer Titles  -->
+    <string name="txt_ACFT_Calculator">ACFT Calculator</string>
+    <string name="txt_Height_and_Weight">Height and Weight</string>
+    <string name="txt_Administer_Test">Administer Test</string>
+    <string name="txt_Data">Data</string>
+    <string name="txt_References">References</string>
+
+    <!-- Main Activity Strings -->
+    <string name="txt_Heavy">Heavy</string>
+    <string name="txt_Significant">Significant</string>
+    <string name="txt_Moderate">Moderate</string>
+
+    <!-- Event Abbreviations -->
+    <string name="txt_MDL">MDL</string>
+    <string name="txt_SPT">SPT</string>
+    <string name="txt_HRP">HRP</string>
+    <string name="txt_SDC">SDC</string>
+    <string name="txt_LTK">LTK</string>
+    <string name="txt_2MR">2MR</string>
+
+
+    <!-- Miscellaneous Strings -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+</resources>

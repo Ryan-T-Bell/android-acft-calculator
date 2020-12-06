@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.programmer.summit.acftcalculator.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <!-- Vertical Guidelines (5%, 30%, 35%, 60%, 65%, 95%) -->
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_0.05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="19dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_0.30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_0.35"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="135dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_0.60"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="231dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_0.65"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="250dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_0.95"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="365dp" />
+
+    <!-- Horizontal Guidelines (8%, 19%, 30%, 41%, 52%, 63%, 74%, 87%)  -->
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08"
+        tools:layout_editor_absoluteY="46dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19"
+        tools:layout_editor_absoluteY="114dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/horz_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87"
+        />
+
+    <!-- Top Buttons -->
+    <Button
+        android:id="@+id/btn_heavy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/horz_0"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.35"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.05"
+
+        android:text="@string/txt_Heavy"/>
+    <Button
+        android:id="@+id/btn_significant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/horz_0"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.35"
+        android:text="@string/txt_Significant"/>
+    <Button
+        android:id="@+id/btn_moderate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/horz_0"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.95"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.65"
+        android:text="@string/txt_Moderate"/>
+
+    <!-- Events: Button Icons -->
+    <Button
+        android:id="@+id/btn_MDL"
+        android:background="@mipmap/ic_mdl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@+id/horz_0"
+        app:layout_constraintBottom_toTopOf="@+id/horz_1"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.05"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.30"
+        />
+    <Button
+        android:id="@+id/btn_SPT"
+        android:background="@mipmap/ic_spt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@+id/horz_1"
+        app:layout_constraintBottom_toTopOf="@+id/horz_2"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.05"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.30"
+        />
+    <Button
+        android:id="@+id/btn_HRP"
+        android:background="@mipmap/ic_hrp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@+id/horz_2"
+        app:layout_constraintBottom_toTopOf="@+id/horz_3"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.05"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.30"
+        />
+    <Button
+        android:id="@+id/btn_SDC"
+        android:background="@mipmap/ic_sdc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@+id/horz_3"
+        app:layout_constraintBottom_toTopOf="@+id/horz_4"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.05"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.30"
+        />
+    <Button
+        android:id="@+id/btn_LTK"
+        android:background="@mipmap/ic_ltk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@+id/horz_4"
+        app:layout_constraintBottom_toTopOf="@+id/horz_5"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.05"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.30"
+        />
+    <Button
+        android:id="@+id/btn_2MR"
+        android:background="@mipmap/ic_2mr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@+id/horz_5"
+        app:layout_constraintBottom_toTopOf="@+id/horz_6"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.05"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.30"
+        />
+
+    <!-- Event Number Pickers -->
+    <NumberPicker
+        android:id="@+id/pkr_MDL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/vert_0.35"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_0"
+        app:layout_constraintBottom_toTopOf="@id/horz_1"
+        >
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/pkr_SPT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/vert_0.35"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_1"
+        app:layout_constraintBottom_toTopOf="@id/horz_2"
+        >
+
+    </NumberPicker>
+    <NumberPicker
+        android:id="@+id/pkr_HRP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/vert_0.35"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_2"
+        app:layout_constraintBottom_toTopOf="@id/horz_3"
+        >
+
+    </NumberPicker>
+    <NumberPicker
+        android:id="@+id/pkr_SDC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/vert_0.35"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_3"
+        app:layout_constraintBottom_toTopOf="@id/horz_4"
+        >
+
+    </NumberPicker>
+    <NumberPicker
+        android:id="@+id/pkr_LTK"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/vert_0.35"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_4"
+        app:layout_constraintBottom_toTopOf="@id/horz_5"
+        >
+
+    </NumberPicker>
+    <NumberPicker
+        android:id="@+id/pkr_2MR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/vert_0.35"
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_5"
+        app:layout_constraintBottom_toTopOf="@id/horz_6"
+        >
+
+    </NumberPicker>
+
+    <!-- Event Scores Calculated-->
+    <LinearLayout
+        android:id="@+id/lyt_MDL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.95"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_0"
+        app:layout_constraintBottom_toTopOf="@id/horz_1">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyt_SPT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.95"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_1"
+        app:layout_constraintBottom_toTopOf="@id/horz_2">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_HRP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.95"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_2"
+        app:layout_constraintBottom_toTopOf="@id/horz_3">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SDC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.95"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_3"
+        app:layout_constraintBottom_toTopOf="@id/horz_4">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_LTK"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.95"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_4"
+        app:layout_constraintBottom_toTopOf="@id/horz_5">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_2MR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintRight_toLeftOf="@+id/vert_0.95"
+        app:layout_constraintLeft_toLeftOf="@+id/vert_0.65"
+        app:layout_constraintTop_toTopOf="@+id/horz_5"
+        app:layout_constraintBottom_toTopOf="@id/horz_6">
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

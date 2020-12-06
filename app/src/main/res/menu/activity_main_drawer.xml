@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ACFT_Calculator"
+            android:icon="@mipmap/ic_calculator"
+            android:title="@string/txt_ACFT_Calculator" />
+        <item
+            android:id="@+id/nav_Height_and_Weight"
+            android:icon="@mipmap/ic_caliper"
+            android:title="@string/txt_Height_and_Weight" />
+        <item
+            android:id="@+id/nav_Administer_Test"
+            android:icon="@mipmap/ic_timer"
+            android:title="@string/txt_Administer_Test" />
+        <item
+            android:id="@+id/nav_Data"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/txt_Data" />
+
+        <item
+            android:id="@+id/nav_Resources"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/txt_References" />
+    </group>
+
+</menu>
